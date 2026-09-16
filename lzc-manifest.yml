@@ -5,11 +5,10 @@ application:
   upstreams:
     - location: /
       backend: http://diarum:8090/
-
 services:
   diarum:
-    # upstream: songtianlun/diarum:v0.5.1
-    image: docker.1ms.run/songtianlun/diarum:v0.5.1
+    # upstream: songtianlun/diarum:v0.8.8
+    image: docker.1ms.run/songtianlun/diarum:v0.8.8
     environment:
       - DIARUM_DATA_PATH=/app/data
     binds:
