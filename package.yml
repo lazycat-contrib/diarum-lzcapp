@@ -1,0 +1,15 @@
+package: community.lazycat.app.diarum
+version: 0.5.1
+name: Diarum
+description: "A simple, elegant, and self-hosted diary application built with PocketBase."
+min_os_version: "1.5.0"
+license: MIT
+homepage: https://github.com/songtianlun/diarum
+author: songtianlun
+locales:
+  en:
+    name: "Diarum"
+    description: "A simple, elegant, and self-hosted diary application built with PocketBase."
+  zh:
+    name: "吾身"
+    description: "取自「吾日三省吾身」，一款零负担、快记录、宜复盘的日记应用，记录独一无二的人生。支持 Markdown、媒体上传、AI 向量化等功能。"

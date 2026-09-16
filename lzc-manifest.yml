@@ -1,12 +1,3 @@
-name: Diarum
-package: community.lazycat.app.diarum
-version: 0.5.1
-min_os_version: 1.3.8
-description: "A simple, elegant, and self-hosted diary application built with PocketBase."
-license: MIT
-homepage: https://github.com/songtianlun/diarum
-author: songtianlun
-
 application:
   subdomain: diarum
   public_path:
@@ -17,20 +8,11 @@ application:
 
 services:
   diarum:
-    # songtianlun/diarum:v0.5.1
-    image: registry.lazycat.cloud/czyt/songtianlun/diarum:61e6f61c9e686444
+    # upstream: songtianlun/diarum:v0.5.1
+    image: docker.1ms.run/songtianlun/diarum:v0.5.1
     environment:
       - DIARUM_DATA_PATH=/app/data
     binds:
       - /lzcapp/var/data:/app/data
     cpu_shares: 512
     mem_limit: 512M
-    restart: unless-stopped
-
-locales:
-  en:
-    name: "Diarum"
-    description: "A simple, elegant, and self-hosted diary application built with PocketBase."
-  zh:
-    name: "吾身"
-    description: "取自「吾日三省吾身」，一款零负担、快记录、宜复盘的日记应用，记录独一无二的人生。支持 Markdown、媒体上传、AI 向量化等功能。"
