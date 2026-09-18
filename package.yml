@@ -1,5 +1,5 @@
 package: community.lazycat.app.diarum
-version: 0.8.9
+version: 0.8.11
 name: Diarum
 description: "A simple, elegant, and self-hosted diary application built with PocketBase."
 min_os_version: "1.5.0"
