@@ -7,8 +7,8 @@ application:
       backend: http://diarum:8090/
 services:
   diarum:
-    # upstream: songtianlun/diarum:v0.8.12
-    image: docker.1ms.run/songtianlun/diarum:v0.8.12
+    # upstream: songtianlun/diarum:v0.9.2
+    image: docker.1ms.run/songtianlun/diarum:v0.9.2
     environment:
       - DIARUM_DATA_PATH=/app/data
     binds:
